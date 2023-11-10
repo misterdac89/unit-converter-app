@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to top, #c5c5f7, #ceebf5);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  color: #444;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 1.625rem;
+}
+
+.sub-title {
+  font-size: 1.25rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #6943ff;
+  color: #fff;
+  padding: 3em;
+}
+
+.input-field {
+  width: 5.9375rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: #6943ff;
+	color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.1875em 0;
+	outline: none;
+}
+
+/* Works for Chrome, Safari, Edge, Opera */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder {
+  color: #adb5bd;
+}
+
+.btn {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: #fff;
+  padding: 1em;
+  width: 95px;
+  font-weight: 600;
+  letter-spacing: inherit;
+}
+
+.btn:active {
+  box-shadow: 3px 3px 15px #fff;
+}
+
+main {
+  padding: 1.25em;
+  background: #e4e0e0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.box-result {
+  padding: 2em 1em;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
